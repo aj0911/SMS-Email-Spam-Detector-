@@ -1,11 +1,11 @@
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import string
 import pickle
 import streamlit as st
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
 tfid = pickle.load(open('vectorizer.pkl','rb'))
 mnb = pickle.load(open('model.pkl','rb'))
 
